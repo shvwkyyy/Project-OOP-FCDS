@@ -50,8 +50,8 @@ public class Main {
                 case 3:
                     cart1.AddProduct(b1,i);
                     break;
-                default:
-                    System.out.println("Invalid");
+                 default:
+                JOptionPane.showMessageDialog(null,"Invalid");
                     break;
 
             }
