@@ -22,7 +22,11 @@ public class Order {
         message += "\nTotal Price: $" + totalPrice;
         JOptionPane.showMessageDialog(null, message);
         }
-    }
+public Order placeOrder(){
+System.out.println("Your order has placed successfully!");
+return new Order(int customerId, int orderId, double totalPrice);   
+}
+}
 
 
 
