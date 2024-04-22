@@ -13,6 +13,13 @@ public class Order {
         this.customerId = Math.abs(customerId);
         this.totalPrice = Math.abs(totalPrice);
     }
+
+  public Order(int customerId, int orderId, double totalPrice , Product products) {
+        this.orderId = Math.abs(orderId);
+        this.customerId = Math.abs(customerId);
+        this.totalPrice = Math.abs(totalPrice);
+this.products = products;
+}
     public void OrderInfo() {
         String message = "Here's your order summary:\n"+            "Order ID: " + orderId + "\n" +
                 "Customer ID: " + customerId + "\n" +            "Products:\n";
